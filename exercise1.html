@@ -14,6 +14,19 @@
 			box-shadow: 5px 10px 18px #888888;
 			position: fixed;
 		}
+		.modal_pop{
+			margin-top: 20px;
+			padding: 20px;
+			color: white;
+		}
+		.design{
+			margin-top: 10px;
+			background-color: #f2ccc1;
+			width: auto;
+			height: auto;
+			padding: 15px;
+			column-count: 3;
+		}
 	</style>
 	<!-- INTERNAL STYLING -->
 	<!-- BOOTSTRAP -->
@@ -34,10 +47,10 @@
 	   		<button id="myBtn" style="color: #303952; border-radius: 10px;opacity:0.5;height: 30px;margin-right: 5px">
 	   			About
 	   		</button>
-	   		<button id="myBtn2" style="color: #303952; border-radius: 10px;opacity:0.5;height: 30px;margin-right: 5px">
+	   		<button id="myBtnTwo" style="color: #303952; border-radius: 10px;opacity:0.5;height: 30px;margin-right: 5px">
 	   			Portofolio
 	   		</button>
-	   		<button id="myBtn3" style="color: #303952; border-radius: 10px;opacity:0.5;height: 30px;margin-right: 5px">
+	   		<button id="myBtnTree" style="color: #303952; border-radius: 10px;opacity:0.5;height: 30px;margin-right: 5px">
 	   			Contact
 	   		</button>
 		</div>
@@ -95,7 +108,30 @@
 			  <!-- Modal content -->
 			  <div class="modal-content">
 			    <span class="close">&times;</span>
-			    <p>Some text in the Modal..</p>
+			    <div class="modal_pop">
+			    	<div style="background-color: #f3a683;padding: 5px">
+			    		<h4>INFORMATION</h4>
+				    	<i>
+							<dl>
+								<dt><a href="https://ugm.ac.id" target="_blank"><u>Universitas Gadjah Mada </u></a>
+								<dt>Bulaksumur, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281
+							</dl>
+						</i>
+			    	</div>
+
+					<hr style="color: grey">
+					<div style="background-color: #f19066;padding: 5px">
+						<p>
+						Now I want to expand my connection with many people who can support my aspirations to educate the nation's life and contribute to society through IT.
+					</div>
+					<hr>
+					<div style="background-color: #e77f67;padding: 5px">
+						<h4>CERTIFIED</h4>
+						<ul>
+							<li>Mobile Sites Certification by Google Partner -<em>2017</em></li>
+						</ul>
+					</div>															
+				</div>
 			  </div>
 			  <!-- Modal content -->
 			</div>
@@ -104,6 +140,7 @@
 	</div>
 
 	<script>
+	// MODAL-------------------------------------------------
 	// Buat ngambil modal
 	var modal = document.getElementById('myModal');
 
@@ -129,6 +166,8 @@
 	    modal.style.display = "none";
 	  }
 	}
+	// MODAL--------------------------------------------------
+
 	</script>
 </body>
 </html>
