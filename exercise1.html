@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="image/png" href="https://i.pinimg.com/originals/7c/c4/31/7cc4315421e69809414fc3ed8b7a18c8.jpg">
+	<title>Exercise 1</title>
+	<!-- EXTERNAL STYLING -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- EXTERNAL STYLING -->
+	<!-- INTERNAL STYLING -->
+	<style type="text/css">
+		.box_info{
+			height: 300px;
+			box-shadow: 5px 10px 18px #888888;
+			position: fixed;
+		}
+	</style>
+	<!-- INTERNAL STYLING -->
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- BOOTSTRAP -->
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- FONT AWESOME -->
+</head>
+<body>
+	<div class="container_web">
+		<div class="row">
+		   	<div class="col-md-8" id="head_text">
+		   		<a href="#">
+		   			<img src="img/ai_logo.png" width="200px">
+		   		</a>
+		   	</div>
+	   		<button id="myBtn" style="color: #303952; border-radius: 10px;opacity:0.5;height: 30px;margin-right: 5px">
+	   			About
+	   		</button>
+	   		<button id="myBtn2" style="color: #303952; border-radius: 10px;opacity:0.5;height: 30px;margin-right: 5px">
+	   			Portofolio
+	   		</button>
+	   		<button id="myBtn3" style="color: #303952; border-radius: 10px;opacity:0.5;height: 30px;margin-right: 5px">
+	   			Contact
+	   		</button>
+		</div>
+		<div class="body">
+			<div class="row">
+				<div class="col-md-2" ></div>
+				<div class="col-md-8 box_info" style="background-color: white;width: 300px">
+					<div class="row" style="margin-right: 20px;margin-left: 10px;margin-top: 20px;height: 250px">
+						<div class="col-md-4" style="width: 100px;padding: 10px">
+							<img src="https://i-h2.pinimg.com/564x/01/f9/f6/01f9f651e63e89380947ada729e327c6.jpg?b=t" style="border-radius: 5%; width: 180px; height: 230px;">
+						</div>
+						<div class="col-md-8" style="background-color:white; width: 100px;padding: 10px;color: #596275">
+							<img src="img/hola.png" style="width: 50px">
+							<h3>I'm <b>Mentari E Rizki</b></h3>
+							Developer
+							<hr style="color: grey;">
+							<table style="color: #596275">
+								<tr>
+									<td colspan="2"></td>
+								</tr>
+								<tr>
+									<td style="width: 100px"><b>Alamat</b></td>
+									<td>Condongcatur, Sleman, DIY 55283</td>
+								</tr>
+								<tr>
+									<td style="width: 100px"><b>Email</b></td>
+									<td>mentari.er@gmail.com</td>
+								</tr>
+								<tr>
+									<td style="width: 100px"><b>Telepon</b></td>
+									<td>+6283 867 184 522</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="row" style="height: 50px">
+						<div class="col-md-12" style="background-color: #e66767; text-align: center; margin-top: 10px; margin-bottom: 10px">
+							<a href="https://www.facebook.com/menthary.guardian.angel" target="_blank">
+								<i class="fa fa-facebook-f" style="color: white;margin-right: 10px"></i>
+							</a>
+							<a href="https://www.instagram.com/mentareen/" target="_blank">
+								<i class="fa fa-instagram" style="color: white;margin-right: 10px"></i>
+							</a>
+							<a href="https://github.com/mentarie" target="_blank">
+								<i class="fa fa-github" style="color: white;margin-right: 10px"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+			  <!-- Modal content -->
+			  <div class="modal-content">
+			    <span class="close">&times;</span>
+			    <p>Some text in the Modal..</p>
+			  </div>
+			  <!-- Modal content -->
+			</div>
+			<!-- The Modal -->
+		</div>
+	</div>
+
+	<script>
+	// Buat ngambil modal
+	var modal = document.getElementById('myModal');
+
+	// buat ngambil button modalnya
+	var btn = document.getElementById("myBtn");
+
+	// ngambil span element
+	var span = document.getElementsByClassName("close")[0];
+
+	// klik modal
+	btn.onclick = function() {
+	  modal.style.display = "block";
+	}
+
+	// klik close modal
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+
+	// klik lain=close
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+	    modal.style.display = "none";
+	  }
+	}
+	</script>
+</body>
+</html>
