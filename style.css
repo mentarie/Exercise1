@@ -9,7 +9,7 @@
 .container_web{
 	width: 1024px;
 	height: auto;
-	background-image: url("img/bg_biru.png");
+	background-image: url("bg_biru.png");
 	background-size: 1024px, 50%;
 	padding: 15px;
 	margin: auto;
